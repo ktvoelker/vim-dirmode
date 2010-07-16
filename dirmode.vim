@@ -57,3 +57,6 @@ function LoadMode(file)
   endfor
 endfunction
 
+au BufRead,BufNewFile * call DirMode()
+call DirMode()
+
