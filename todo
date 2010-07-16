@@ -1,0 +1,9 @@
+
+TODO
+====
+
+Use $HOME/.vim-mode-default when no .vim-mode is found in the directories above
+a file. Only load it once.
+
+Use the options defined in .vim-mode-default as the valid options.
+
