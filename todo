@@ -2,6 +2,8 @@
 TODO
 ====
 
+Document the format of the .vim-mode file.
+
 Use $HOME/.vim-mode-default when no .vim-mode is found in the directories above
 a file. Only load it once.
 
