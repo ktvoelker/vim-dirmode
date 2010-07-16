@@ -23,6 +23,8 @@ let s:valid =
       \, "softtabstop": 1
       \, "expandtab"  : 1
       \, "noexpandtab": 1
+      \, "fileformat" : 1
+      \, "fileformats": 1
       \}
 
 function LoadMode(file)
@@ -47,7 +49,7 @@ function LoadMode(file)
         else
           let val = strpart(mode, sep + 1, len - sep - 1)
           " echo "Value is " . val
-          if match(val, "^\\d*$") == 0
+          if match(val, "^\\w*$") == 0
             " echo "Value is valid!"
             execute "set " . opt . "=" . val
           endif
@@ -58,5 +60,4 @@ function LoadMode(file)
 endfunction
 
 au BufRead,BufNewFile * call DirMode()
-call DirMode()
 
